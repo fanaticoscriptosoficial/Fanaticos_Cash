@@ -1056,25 +1056,25 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 1000) //1ª FASE
+    else if(pindexBest->nHeight > 100) //1ª FASE
     {
         nSubsidy = 4.5 * COIN;
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 350400) //2ª FASE
+    else if(pindexBest->nHeight > 250) //2ª FASE
     {
         nSubsidy = 4 * COIN;
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 1226400) //3ª FASE
+    else if(pindexBest->nHeight > 500) //3ª FASE
     {
         nSubsidy = 3.5 * COIN;
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 1752000) //FASE FINAL
+    else if(pindexBest->nHeight > 1000) //FASE FINAL
     {
         nSubsidy = 3 * COIN;
         return nSubsidy + nFees;
@@ -1093,40 +1093,40 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     int64_t nRewardCoinYear;
 
-    if(pindexBest->nHeight < 175199){
+    if(pindexBest->nHeight < 100){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE01;
     }
-    else if(pindexBest->nHeight >= 175200){
+    else if(pindexBest->nHeight >= 250){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE02;
     }
-    else if(pindexBest->nHeight >= 350400){
+    else if(pindexBest->nHeight >= 500){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE03;
     }
-    else if(pindexBest->nHeight >= 525600){
+    else if(pindexBest->nHeight >= 800){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE04;
     }
-    else if(pindexBest->nHeight >= 700800){
+    else if(pindexBest->nHeight >= 1200){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE05;
     }
-    else if(pindexBest->nHeight >= 876000){
+    else if(pindexBest->nHeight >= 1400){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE06;
     }
-    else if(pindexBest->nHeight >= 1051200){
+    else if(pindexBest->nHeight >= 1600){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE07;
     }
-    else if(pindexBest->nHeight >= 1226400){
+    else if(pindexBest->nHeight >= 1800){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE08;
     }
-    else if(pindexBest->nHeight >= 1401600){
+    else if(pindexBest->nHeight >= 2000){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE09;
     }
-    else if(pindexBest->nHeight >= 157600){
+    else if(pindexBest->nHeight >= 2200){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE10;
     }
-    else if(pindexBest->nHeight >= 1752000){
+    else if(pindexBest->nHeight >= 2400){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE11;
     }
-    else if(pindexBest->nHeight >= 1927200){
+    else if(pindexBest->nHeight >= 2600){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE12;
     }
 
