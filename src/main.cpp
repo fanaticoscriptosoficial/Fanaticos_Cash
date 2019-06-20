@@ -1050,31 +1050,31 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 11) //Mineracao AntStamine
+    else if(pindexBest->nHeight >= 11) //Mineracao AntStamine
     {
         nSubsidy = 0 * COIN;
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 100) //1ª FASE
+    else if(pindexBest->nHeight >= 100) //1ª FASE
     {
         nSubsidy = 4.5 * COIN;
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 250) //2ª FASE
+    else if(pindexBest->nHeight >= 250) //2ª FASE
     {
         nSubsidy = 4 * COIN;
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 500) //3ª FASE
+    else if(pindexBest->nHeight >= 500) //3ª FASE
     {
         nSubsidy = 3.5 * COIN;
         return nSubsidy + nFees;
     }
 
-    else if(pindexBest->nHeight > 1000) //FASE FINAL
+    else if(pindexBest->nHeight >= 1000) //FASE FINAL
     {
         nSubsidy = 3 * COIN;
         return nSubsidy + nFees;
@@ -1093,10 +1093,10 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     int64_t nRewardCoinYear;
 
-    if(pindexBest->nHeight < 100){
+    if(pindexBest->nHeight < 101){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE01;
     }
-    else if(pindexBest->nHeight >= 250){
+    else if(pindexBest->nHeight >= 101){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE02;
     }
     else if(pindexBest->nHeight >= 500){

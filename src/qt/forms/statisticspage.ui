@@ -36,86 +36,6 @@
      </property>
     </spacer>
    </item>
-   <item row="0" column="1">
-    <widget class="QFrame" name="frame">
-     <property name="minimumSize">
-      <size>
-       <width>213</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>70</y>
-        <width>191</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Fanaticoscash phases:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelPhasePoW">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>160</y>
-        <width>191</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 7pt &quot;Century Gothic&quot;;</string>
-      </property>
-      <property name="text">
-       <string>labelPhasePoW</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelPhasePoS">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>200</y>
-        <width>191</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 7pt &quot;Century Gothic&quot;;</string>
-      </property>
-      <property name="text">
-       <string>labelPhasePoS</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelPhaseHibrid">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>240</y>
-        <width>191</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 7pt &quot;Century Gothic&quot;;</string>
-      </property>
-      <property name="text">
-       <string>labelPhaseHibrid</string>
-      </property>
-     </widget>
-    </widget>
-   </item>
    <item row="0" column="0">
     <widget class="QFrame" name="gridFrame_2">
      <layout class="QGridLayout" name="gridLayout_4">
@@ -218,35 +138,6 @@
          </widget>
         </item>
         <item row="2" column="0">
-         <widget class="QLabel" name="label_12">
-          <property name="styleSheet">
-           <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
-          </property>
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;PoW Block Reward&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QLabel" name="rewardBox">
-          <property name="font">
-           <font>
-            <family>Century Gothic</family>
-            <pointsize>10</pointsize>
-            <weight>9</weight>
-            <italic>false</italic>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
-          </property>
-          <property name="text">
-           <string>250</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
          <widget class="QLabel" name="label_13">
           <property name="styleSheet">
            <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
@@ -256,7 +147,7 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="1">
+        <item row="2" column="1">
          <widget class="QLabel" name="diffBox">
           <property name="font">
            <font>
@@ -275,7 +166,7 @@
           </property>
          </widget>
         </item>
-        <item row="4" column="0">
+        <item row="3" column="0">
          <widget class="QLabel" name="label_9">
           <property name="styleSheet">
            <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
@@ -285,7 +176,7 @@
           </property>
          </widget>
         </item>
-        <item row="4" column="1">
+        <item row="3" column="1">
          <widget class="QLabel" name="diffBox2">
           <property name="font">
            <font>
@@ -304,7 +195,17 @@
           </property>
          </widget>
         </item>
-        <item row="5" column="1">
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="styleSheet">
+           <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Net Hashrate&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
          <widget class="QLabel" name="pawrateBox">
           <property name="font">
            <font>
@@ -323,7 +224,7 @@
           </property>
          </widget>
         </item>
-        <item row="6" column="0">
+        <item row="5" column="0">
          <widget class="QLabel" name="label3_2">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
@@ -339,7 +240,7 @@
           </property>
          </widget>
         </item>
-        <item row="6" column="1">
+        <item row="5" column="1">
          <widget class="QLabel" name="localBox">
           <property name="font">
            <font>
@@ -358,7 +259,7 @@
           </property>
          </widget>
         </item>
-        <item row="7" column="0">
+        <item row="6" column="0">
          <widget class="QLabel" name="label1_2">
           <property name="styleSheet">
            <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
@@ -368,7 +269,7 @@
           </property>
          </widget>
         </item>
-        <item row="7" column="1">
+        <item row="6" column="1">
          <widget class="QLabel" name="connectionBox">
           <property name="font">
            <font>
@@ -387,7 +288,7 @@
           </property>
          </widget>
         </item>
-        <item row="8" column="0">
+        <item row="7" column="0">
          <widget class="QLabel" name="label_8">
           <property name="styleSheet">
            <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
@@ -397,7 +298,7 @@
           </property>
          </widget>
         </item>
-        <item row="8" column="1">
+        <item row="7" column="1">
          <widget class="QLabel" name="volumeBox">
           <property name="font">
            <font>
@@ -416,7 +317,7 @@
           </property>
          </widget>
         </item>
-        <item row="9" column="0">
+        <item row="8" column="0">
          <widget class="QLabel" name="label_10">
           <property name="styleSheet">
            <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
@@ -426,7 +327,7 @@
           </property>
          </widget>
         </item>
-        <item row="9" column="1">
+        <item row="8" column="1">
          <widget class="QLabel" name="minBox">
           <property name="font">
            <font>
@@ -445,7 +346,7 @@
           </property>
          </widget>
         </item>
-        <item row="10" column="0">
+        <item row="9" column="0">
          <widget class="QLabel" name="label_11">
           <property name="styleSheet">
            <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
@@ -455,7 +356,7 @@
           </property>
          </widget>
         </item>
-        <item row="10" column="1">
+        <item row="9" column="1">
          <widget class="QLabel" name="maxBox">
           <property name="font">
            <font>
@@ -471,45 +372,6 @@
           </property>
           <property name="text">
            <string>0</string>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="0">
-         <widget class="QLabel" name="label_15">
-          <property name="styleSheet">
-           <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
-          </property>
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Mining Phase&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="1">
-         <widget class="QLabel" name="cBox">
-          <property name="font">
-           <font>
-            <family>Century Gothic</family>
-            <pointsize>10</pointsize>
-            <weight>9</weight>
-            <italic>false</italic>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
-          </property>
-          <property name="text">
-           <string>POW</string>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="0">
-         <widget class="QLabel" name="label_16">
-          <property name="styleSheet">
-           <string notr="true">font: 75 10pt &quot;Century Gothic&quot;;</string>
-          </property>
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Net Hashrate&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
@@ -540,6 +402,22 @@
      </property>
      <property name="default">
       <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>213</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
      </property>
     </widget>
    </item>

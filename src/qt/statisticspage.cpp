@@ -55,10 +55,6 @@ void StatisticsPage::updateStatistics()
     QString stakemax = QString::number(nNetworkWeight);
     QString phase = "";
 
-    ui->labelPhasePoW->setText("PoW + PoS = Block 0 - ");
-    ui->labelPhasePoS->setText("PoS = Block - 263250");
-    ui->labelPhaseHibrid->setText("PoW + PoS = Block 263251 up");
-
     QString subsidy = QString::number(nSubsidy, 'f', 6);
     QString hardness = QString::number(pHardness, 'f', 6);
     QString hardness2 = QString::number(pHardness2, 'f', 6);
@@ -87,21 +83,6 @@ void StatisticsPage::updateStatistics()
         ui->maxBox->setText("<b><font color=\"green\">" + stakemax + "</font></b>");
     } else {
     ui->maxBox->setText(stakemax);
-    }
-
-    if(phase != stakecPrevious)
-    {
-        ui->cBox->setText("<b><font color=\"green\">" + phase + "</font></b>");
-    } else {
-    ui->cBox->setText(phase);
-    }
-
-
-    if(nSubsidy < rewardPrevious)
-    {
-        ui->rewardBox->setText("<b><font color=\"red\">" + subsidy + "</font></b>");
-    } else {
-	ui->rewardBox->setText(subsidy);
     }
 
     if(pHardness > hardnessPrevious)
