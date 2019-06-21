@@ -1042,48 +1042,37 @@ void static PruneOrphanBlocks()
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
 
-    int64_t nSubsidy = 3 * COIN; //Premiação PoW Inicial(2 Moedas) - Francis
-
     if(pindexBest->nHeight < 10) //Pré-Mineração - Francis
     {
         nSubsidy = 420000 * COIN; //4.200.000
         return nSubsidy + nFees;
-    }
-
-    else if(pindexBest->nHeight >= 11) //Mineracao AntStamine
+    }else if(pindexBest->nHeight >= 11 && pindexBest->nHeight < 99) //Mineracao AntStamine
     {
         nSubsidy = 0 * COIN;
         return nSubsidy + nFees;
-    }
-
-    else if(pindexBest->nHeight >= 100) //1ª FASE
+    }else if(pindexBest->nHeight >= 100 && pindexBest->nHeight < 249) //1ª FASE
     {
         nSubsidy = 4.5 * COIN;
         return nSubsidy + nFees;
-    }
-
-    else if(pindexBest->nHeight >= 250) //2ª FASE
+    }else if(pindexBest->nHeight >= 250 && pindexBest->nHeight < 499) //2ª FASE
     {
         nSubsidy = 4 * COIN;
         return nSubsidy + nFees;
-    }
-
-    else if(pindexBest->nHeight >= 500) //3ª FASE
+    }else if(pindexBest->nHeight >= 500 && pindexBest->nHeight < 999) //3ª FASE
     {
         nSubsidy = 3.5 * COIN;
         return nSubsidy + nFees;
-    }
-
-    else if(pindexBest->nHeight >= 1000) //FASE FINAL
+    }else if(pindexBest->nHeight >= 1000) //FASE FINAL
     {
         nSubsidy = 3 * COIN;
         return nSubsidy + nFees;
+    }else{
+        int64_t nSubsidy = 0 * COIN; //Premiação PoW Padrão(0 Moedas) - Francis
+    return nSubsidy + nFees;
     }
 
     if (fDebug && GetBoolArg("-printcreation"))
     printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
-    return nSubsidy + nFees;
-
 
 }
 
@@ -1096,46 +1085,46 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     if(pindexBest->nHeight < 101){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE01;
     }
-    else if(pindexBest->nHeight >= 101){
+    else if(pindexBest->nHeight >= 101 && pindexBest->nHeight < 499){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE02;
     }
-    else if(pindexBest->nHeight >= 500){
+    else if(pindexBest->nHeight >= 500 && pindexBest->nHeight < 799){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE03;
     }
-    else if(pindexBest->nHeight >= 800){
+    else if(pindexBest->nHeight >= 800 && pindexBest->nHeight < 1199){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE04;
     }
-    else if(pindexBest->nHeight >= 1200){
+    else if(pindexBest->nHeight >= 1200 && pindexBest->nHeight < 1399){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE05;
     }
-    else if(pindexBest->nHeight >= 1400){
+    else if(pindexBest->nHeight >= 1400 && pindexBest->nHeight < 1599){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE06;
     }
-    else if(pindexBest->nHeight >= 1600){
+    else if(pindexBest->nHeight >= 1600 && pindexBest->nHeight < 1799){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE07;
     }
-    else if(pindexBest->nHeight >= 1800){
+    else if(pindexBest->nHeight >= 1800 && pindexBest->nHeight < 1999){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE08;
     }
-    else if(pindexBest->nHeight >= 2000){
+    else if(pindexBest->nHeight >= 2000 && pindexBest->nHeight < 2199){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE09;
     }
-    else if(pindexBest->nHeight >= 2200){
+    else if(pindexBest->nHeight >= 2200 && pindexBest->nHeight < 2399){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE10;
     }
-    else if(pindexBest->nHeight >= 2400){
+    else if(pindexBest->nHeight >= 2400 && pindexBest->nHeight < 2599){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE11;
     }
     else if(pindexBest->nHeight >= 2600){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE12;
+    }else{
+        int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
+        return nSubsidy + nFees;
     }
-
-    int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nRewardCoinYear=%"PRId64" nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nRewardCoinYear/CENT,nCoinAge);
 
-    return nSubsidy + nFees;
 }
 
 
