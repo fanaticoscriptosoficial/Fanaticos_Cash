@@ -1044,27 +1044,27 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 
     if(pindexBest->nHeight < 10) //Pré-Mineração - Francis
     {
-        nSubsidy = 420000 * COIN; //4.200.000
+        int64_t nSubsidy = 420000 * COIN; //4.200.000
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 11 && pindexBest->nHeight < 99) //Mineracao AntStamine
     {
-        nSubsidy = 0 * COIN;
+        int64_t nSubsidy = 0 * COIN;
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 100 && pindexBest->nHeight < 249) //1ª FASE
     {
-        nSubsidy = 3 * COIN;
+        int64_t nSubsidy = 3 * COIN;
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 250 && pindexBest->nHeight < 499) //2ª FASE
     {
-        nSubsidy = 2.5 * COIN;
+        int64_t nSubsidy = 2.5 * COIN;
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 500 && pindexBest->nHeight < 999) //3ª FASE
     {
-        nSubsidy = 2 * COIN;
+        int64_t nSubsidy = 2 * COIN;
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 1000) //FASE FINAL
     {
-        nSubsidy = 1 * COIN;
+        int64_t nSubsidy = 1 * COIN;
         return nSubsidy + nFees;
     }else{
         int64_t nSubsidy = 0 * COIN; //Premiação PoW Padrão(0 Moedas) - Francis
