@@ -1062,14 +1062,14 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     {
         int64_t nSubsidy = 2 * COIN;
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 1000) //FASE FINAL
+    }else(pindexBest->nHeight >= 1000) //FASE FINAL
     {
         int64_t nSubsidy = 1 * COIN;
         return nSubsidy + nFees;
-    }else{
-        int64_t nSubsidy = 0 * COIN; //Premiação PoW Padrão(0 Moedas) - Francis
-    return nSubsidy + nFees;
     }
+    int64_t nSubsidy = 0 * COIN; //Premiação PoW Padrão(0 Moedas) - Francis
+    return nSubsidy + nFees;
+
 
     if (fDebug && GetBoolArg("-printcreation"))
     printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
@@ -1115,12 +1115,11 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     else if(pindexBest->nHeight >= 2400 && pindexBest->nHeight < 2599){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE11;
     }
-    else if(pindexBest->nHeight >= 2600){
+    else (pindexBest->nHeight >= 2600){
         nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE_FASE12;
-    }else{
+    }
         int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
         return nSubsidy + nFees;
-    }
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nRewardCoinYear=%"PRId64" nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nRewardCoinYear/CENT,nCoinAge);
