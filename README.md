@@ -1,2 +1,146 @@
 # Fanáticos Cash
-Repositório Oficial da Criptomoeda desenvolvida pela Fanáticos Criptos
+# Version: 1.0.0.0
+Em desenvolvimento...
+
+# Contact:
+> 💬Telegram:
+**https://t.me/FanaticosCriptos**
+
+> 💬Facebook:
+**https://www.facebook.com/fanaticoscriptosoficial/**
+
+> 💬Twitter:
+**https://twitter.com/fanacriptofm/**
+
+> 💬BTCTalk:
+**EM DESENVOLVIMENTO**
+
+> ✉️E-mail:
+**EM DESENVOLVIMENTO**
+
+> 🌎Website:
+**https://cash.fanaticoscriptos.online**
+
+> 🌎Block Explorer:
+**EM DESENVOLVIMENTO**
+
+# Specifications:
+  - **ALGORITHM:** x13
+  - **BLOCK TIME:** 180 seconds
+  - **REWARDS PoW:**<br>
+  Phase Anti-instamine - Block 11 to 999 = 0FCH <br>
+  Phase 01 - Block 1000 to 350399 = 3FCH <br>
+  Phase 02 - Block 350400 to 1226399 = 2.5FCH <br>
+  Phase 03 - Block 1226400 to 1751999 = 2FCH <br>
+  Phase 04 - Block 1752000 up = 1FCH <br>
+  - **PoS:** After 2h
+  - **PoS:**<br>
+  Phase 01 - Block 0 to 175199 = 18%* <br>
+  Phase 02 - Block 175200 to 350399 = 15%* <br>
+  Phase 03 - Block 350400 to 525599 = 14%* <br>
+  Phase 04 - Block 525600 to 700799 = 12%* <br>
+  Phase 05 - Block 700800 to 875999 = 10%* <br>
+  Phase 06 - Block 876000 to 1051199 = 9%* <br>
+  Phase 07 - Block 1051200 to 1226399 = 8.5%* <br>
+  Phase 08 - Block 1226400 to 1401599 = 8%* <br>
+  Phase 09 - Block 1401600 to 1576799 = 7.5%* <br>
+  Phase 10 - Block 1576800 to 1751999 = 7%* <br>
+  Phase 11 - Block 1752000 to 1927199 = 6.5%* <br>
+  Phase 12 - Block 1927200 up = 6%* <br>
+  *per year
+  - **CONFIRMATIONS:** 5 for mining and 3 for transactions
+  - **TOTAL COINS:** ~ 21 million
+  - **PRE-MINED COINS:** ~ 4.200.000 FCH
+  - **VELOCITY:** Triple verification system in every network transaction, thus preventing the "double spend"
+  - **Adaptable Block Size(ABS):** The block holds all transactions sent within 60 seconds, regardless of the number of transactions
+
+# Compile Source<br>
+**Download and install the dependencies:**<br>
+sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.3-dev libdb5.3++-dev libminiupnpc-dev qrencode libqrencode-dev git libtool automake autotools-dev autoconf pkg-config libssl-dev libgmp3-dev libevent-dev bsdmainutils
+<br><br><br>
+**Compile the daemon in the FanaticosCash/src directory:**<br>
+cd FanaticosCash/src<br><br>
+make -f makefile.unix USE_UPNP=1 USE_IPV6=1<br><br>
+strip FanaticosCashd<br>
+<br><br>
+**Run daemon in the FanaticosCash/src directory:**<br>
+./FanaticosCashd<br><br>
+<br>
+**(OPTIONAL)Compile the QT in the FanaticosCash directory:**<br>
+sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qt-sdk qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev<br><br>
+qmake FanaticosCash-qt.pro "USE_UPNP=1" "USE_QRCODE=1"<br><br>
+make -f Makefile<br><br>
+
+# FanaticosCash.conf
+```sh
+listen=1
+txindex = 1
+rpcuser=user
+rpcpassword=Random_Password
+rpcport=6385
+port=6384
+#(0=off, 1=on) daemon - run in the background as a daemon and accept commands
+daemon=1
+#(0=off, 1=on) server - accept command line and JSON-RPC commands
+server=1
+rpcallowip=127.0.0.1
+testnet=0
+addnode=node1.fanaticoscriptos.com:6384
+addnode=node2.fanaticoscriptos.com:6384
+addnode=node3.fanaticoscriptos.com:6384
+addnode=node4.fanaticoscriptos.com:6384
+```
+
+# FanaticosCash.conf - Testnet
+```sh
+listen=1
+txindex=1
+rpcuser=user
+rpcpassword=Random_Password
+rpcport=6383
+port=6382
+#(0=off, 1=on) daemon - run in the background as a daemon and accept commands
+daemon=1
+#(0=off, 1=on) server - accept command line and JSON-RPC commands
+server=1
+rpcallowip=127.0.0.1
+testnet=1
+addnode=node1.fanaticoscriptos.com:6382
+addnode=node2.fanaticoscriptos.com:6382
+addnode=node3.fanaticoscriptos.com:6382
+addnode=node4.fanaticoscriptos.com:6382
+```
+
+#  Mining:
+- Solo Cpu:
+```sh
+{
+"_comment1" : "Any long-format command line argument ",
+"_comment2" : "may be used in this JSON configuration file",
+
+"api-bind" : "127.0.0.1:4048",
+
+"url" : "localhost:6385",
+"user" : "user",
+"pass" : "password",
+
+"algo" : "x13",
+"threads" : 0,
+"cpu-priority" : 0,
+"cpu-affinity" : -1,
+
+"benchmark" : false,
+"debug" : true,
+"protocol": false,
+"quiet" : false
+}
+```
+
+```sh
+cpuminer -q --algo=x13 -o 127.0.0.1:6385 -u user-p password
+```
+
+- Solo GPU:
+```sh
+ccminer30.exe -q --algo=x13 -o 127.0.0.1:6385 -u user-p password
+```
