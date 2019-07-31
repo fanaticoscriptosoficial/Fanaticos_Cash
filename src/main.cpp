@@ -1046,7 +1046,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     {
         int64_t nSubsidy = 420000 * COIN; //4.200.000
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 11 && pindexBest->nHeight < 999) //Mineracao AntStamine
+    }else if(pindexBest->nHeight >= 11 && pindexBest->nHeight < 999) //Mineracao AntInstamine
     {
         int64_t nSubsidy = 0 * COIN;
         return nSubsidy + nFees;
@@ -1123,7 +1123,6 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nRewardCoinYear=%"PRId64" nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nRewardCoinYear/CENT,nCoinAge);
-
 }
 
 
