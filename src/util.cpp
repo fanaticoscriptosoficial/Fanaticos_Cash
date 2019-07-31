@@ -1100,8 +1100,8 @@ void createConf() //Criação de Arquivo de Configuração Automático - Francis
 #endif
     pConf << "rpcuser=user\nrpcpassword="
     + randomStrGen(15)
-    + "\nrpcport=66781"
-    + "\nport=66780"
+    + "\nrpcport=6385"
+    + "\nport=6384"
     + "\n#(0=off, 1=on) daemon - run in the background as a daemon and accept commands"
     + "\ndaemon=1"
     + "\nlisten=1"
@@ -1110,7 +1110,7 @@ void createConf() //Criação de Arquivo de Configuração Automático - Francis
     + "\nserver=1"
     + "\nrpcallowip=127.0.0.1"
     + "\ntestnet=0"
-    + "\naddnode=45.228.204.237:66780";
+    + "\naddnode=45.228.204.237:6384";
    pConf.close();
 }
 
