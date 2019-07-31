@@ -2905,9 +2905,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "Bolsonaro defende decreto de armas e diz que não é um ditador - Estadão"; //TimeStamp - Francis
+        const char* pszTimestamp = ""; //TimeStamp - Francis
         CTransaction txNew;
-        txNew.nTime = 1560880485; //NewTime - Francis
+        txNew.nTime = 0; //NewTime - Francis
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2917,9 +2917,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1560880485; //BlockTime - Francis
+        block.nTime    = 0; //BlockTime - Francis
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 4372056; //BlockNonce MainNet- Francis
+        block.nNonce   = 0; //BlockNonce MainNet- Francis
         if(fTestNet)
         {
             block.nNonce   = 0; //BlockNonce Testnet- Francis
@@ -2944,7 +2944,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x3cb7d464193b6d3a8ccbb85ca3d4c674f3da80408f283deff8b4a9e80350ae84")); //Merkle - Francis
+        assert(block.hashMerkleRoot == uint256("0x")); //Merkle - Francis
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
 
 
