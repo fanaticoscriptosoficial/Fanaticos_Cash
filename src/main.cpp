@@ -1046,23 +1046,23 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     {
         int64_t nSubsidy = 420000 * COIN; //4.200.000
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 11 && pindexBest->nHeight < 99) //Mineracao AntStamine
+    }else if(pindexBest->nHeight >= 11 && pindexBest->nHeight < 999) //Mineracao AntStamine
     {
         int64_t nSubsidy = 0 * COIN;
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 100 && pindexBest->nHeight < 249) //1ª FASE
+    }else if(pindexBest->nHeight >= 1000 && pindexBest->nHeight < 350399) //1ª FASE
     {
         int64_t nSubsidy = 3 * COIN;
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 250 && pindexBest->nHeight < 499) //2ª FASE
+    }else if(pindexBest->nHeight >= 350400 && pindexBest->nHeight < 1226399) //2ª FASE
     {
         int64_t nSubsidy = 2.5 * COIN;
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 500 && pindexBest->nHeight < 999) //3ª FASE
+    }else if(pindexBest->nHeight >= 1226400 && pindexBest->nHeight < 1751999) //3ª FASE
     {
         int64_t nSubsidy = 2 * COIN;
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 1000) //FASE FINAL
+    }else if(pindexBest->nHeight >= 1752000) //FASE FINAL
     {
         int64_t nSubsidy = 1 * COIN;
         return nSubsidy + nFees;
