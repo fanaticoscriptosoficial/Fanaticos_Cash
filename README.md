@@ -10,16 +10,16 @@ Em desenvolvimento...
 **https://www.facebook.com/fanaticoscriptosoficial/**
 
 > 💬Twitter:
-**https://twitter.com/fanacriptofm/**
+**https://twitter.com/fanacriptos/**
 
 > 💬BTCTalk:
 **EM DESENVOLVIMENTO**
 
 > ✉️E-mail:
-**EM DESENVOLVIMENTO**
+**cash@fanaticoscriptos.com**
 
 > 🌎Website:
-**https://cash.fanaticoscriptos.online**
+**https://cash.fanaticoscriptos.com**
 
 > 🌎Block Explorer:
 **EM DESENVOLVIMENTO**
