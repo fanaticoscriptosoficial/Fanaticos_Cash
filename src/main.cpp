@@ -1052,15 +1052,15 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 1000 && pindexBest->nHeight < 350399) //1ª FASE
     {
-        int64_t nSubsidy = 3 * COIN;
+        int64_t nSubsidy = 2 * COIN;
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 350400 && pindexBest->nHeight < 1226399) //2ª FASE
     {
-        int64_t nSubsidy = 2.5 * COIN;
+        int64_t nSubsidy = 1.5 * COIN;
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 1226400 && pindexBest->nHeight < 1751999) //3ª FASE
     {
-        int64_t nSubsidy = 2 * COIN;
+        int64_t nSubsidy = 1.25 * COIN;
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 1752000) //FASE FINAL
     {
