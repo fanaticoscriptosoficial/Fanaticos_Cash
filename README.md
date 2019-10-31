@@ -13,7 +13,7 @@ Em desenvolvimento...
 **https://twitter.com/fanacriptos/**
 
 > 💬BTCTalk:
-**EM DESENVOLVIMENTO**
+**https://bitcointalk.org/index.php?topic=5187519.0**
 
 > ✉️E-mail:
 **cash@fanaticoscriptos.com**
@@ -29,9 +29,9 @@ Em desenvolvimento...
   - **BLOCK TIME:** 180 seconds
   - **REWARDS PoW:**<br>
   Phase Anti-instamine - Block 11 to 999 = 0FCH <br>
-  Phase 01 - Block 1000 to 350399 = 3FCH <br>
-  Phase 02 - Block 350400 to 1226399 = 2.5FCH <br>
-  Phase 03 - Block 1226400 to 1751999 = 2FCH <br>
+  Phase 01 - Block 1000 to 350399 = 2FCH <br>
+  Phase 02 - Block 350400 to 1226399 = 1.5FCH <br>
+  Phase 03 - Block 1226400 to 1751999 = 1.25FCH <br>
   Phase 04 - Block 1752000 up = 1FCH <br>
   - **PoS:** After 2h
   - **PoS:**<br>
