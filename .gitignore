@@ -12,3 +12,10 @@ src/obj-test/*.P
 src/obj/build.h
 src/qt/locale/*.qm
 src/clean.sh
+fanaticoscash-qt_plugin_import.cpp
+Makefile
+Makefile.Debug
+Makefile.Release
+object_script.FanaticosCash-qt.Debug
+object_script.FanaticosCash-qt.Release
+release/FanaticosCash-qt.exe
