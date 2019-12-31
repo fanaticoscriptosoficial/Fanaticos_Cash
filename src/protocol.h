@@ -18,7 +18,7 @@
 extern bool fTestNet;
 static inline unsigned short GetDefaultPort(const bool testnet = fTestNet)
 {
-    return testnet ? 6382 : 6384;
+    return testnet ? 6382 : 6384; //Portas P2P Testnet e Main - Francis
 }
 
 
