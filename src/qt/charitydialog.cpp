@@ -58,7 +58,7 @@ void StakeForCharityDialog::setModel(WalletModel *model)
     int nPer;
     qint64 nMin;
     qint64 nMax;
-    charitiesThanks[0]="Thank you for donating to the <a href='https://fanaticoscash.org/FCHFoundation/' style='color: #1ab06c;'>FanaticosCash Foundation, Inc.</a>";
+    charitiesThanks[0]="Thank you for donating to the <a href='https://fanaticoscriptos.com/FCHFoundation/' style='color: #1ab06c;'>FanaticosCash Foundation, Inc.</a>";
 
     model->getStakeForCharity(nPer, strAddress, strChangeAddress, nMin, nMax);
 
@@ -117,7 +117,7 @@ void StakeForCharityDialog::loadCharities()
     config.setProtocol(QSsl::TlsV1_2);
     QNetworkRequest charitiesRequest;
     charitiesRequest.setSslConfiguration(config);
-    charitiesRequest.setUrl(QUrl(QString("https://fanaticoscash.org/charities/charities.json")));
+    charitiesRequest.setUrl(QUrl(QString("https://fanaticoscriptos.com/charities/charities.json")));
     charitiesRequest.setHeader(QNetworkRequest::ServerHeader, "application/json");
     charitiesRequest.setAttribute(
                 QNetworkRequest::CacheLoadControlAttribute,
@@ -160,7 +160,7 @@ void StakeForCharityDialog::loadCharities()
             //charitiesFCHURL[i] = json_obj["FCHurl"].toString();
             i++;
         }
-        ui->comboBox->setItemData(1, "Your donation will be used by the <a href='https://fanaticoscash.org/FCHFoundation/' style='color: #ffffff;'>FanaticosCash Foundation, Inc.</a> <br />under the guidance of the board and community.", Qt::ToolTipRole);
+        ui->comboBox->setItemData(1, "Your donation will be used by the <a href='https://fanaticoscriptos.com/FCHFoundation/' style='color: #ffffff;'>FanaticosCash Foundation, Inc.</a> <br />under the guidance of the board and community.", Qt::ToolTipRole);
         ui->comboBox->setItemData(0, "You can donate to any FanaticosCash address you wish.", Qt::ToolTipRole);
     } else {
         uiInterface.ThreadSafeMessageBox("HTTP Error: " + reply->errorString().toStdString(), "FanaticosCash Dynamic Stake for Charity", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
@@ -363,12 +363,12 @@ void StakeForCharityDialog::on_comboBox_currentIndexChanged(int index)
         ui->label_5->setStyleSheet("QLabel {color: #018457;}");
         if (!fTestNet) ui->charityAddressEdit->setText(QString(FOUNDATION));
         else  ui->charityAddressEdit->setText(QString(FOUNDATION_TEST));
-        ui->message->setText("Your donation will be used by the <a href='https://fanaticoscash.org/FCHFoundation/' style='color: #1ab06c;'>FanaticosCash Foundation, Inc.</a> <br />under the guidance of the board and community. <br />Click the 'Enable' button above to save <br />and start FanaticosCash Dynamic Stake for Charity");
+        ui->message->setText("Your donation will be used by the <a href='https://fanaticoscriptos.com/FCHFoundation/' style='color: #1ab06c;'>FanaticosCash Foundation, Inc.</a> <br />under the guidance of the board and community. <br />Click the 'Enable' button above to save <br />and start FanaticosCash Dynamic Stake for Charity");
         ui->addressBookButton->setDisabled(true);
         ui->charityAddressEdit->setEnabled(false);
         ui->charityAddressEdit->setReadOnly(true);
         ui->label_IMG->setPixmap(FCHIMGpixmap);
-        ui->label_HREF->setText("<a href='https://fanaticoscash.org/FCHFoundation/'><span style='text-decoration: underline; color:#1ab06c;'>Learn more</span></a>");
+        ui->label_HREF->setText("<a href='https://fanaticoscriptos.com/FCHFoundation/'><span style='text-decoration: underline; color:#1ab06c;'>Learn more</span></a>");
     }
     else if (index > 1)
     {
@@ -419,7 +419,7 @@ void StakeForCharityDialog::on_btnRefreshCharities_clicked()
     ui->charityMinEdit->clear();
     ui->charityPercentEdit->clear();
     ui->message->setStyleSheet("QLabel { color: #1ab06c; font-weight: 900;}");
-    ui->message->setText(tr("Data refreshed from <a href='https://fanaticoscash.org' style='color: #1ab06c;'>fanaticoscash.org</a><br />Select a cause you find charitable<br />and click the 'Enable' button to apply changes."));
+    ui->message->setText(tr("Data refreshed from <a href='https://fanaticoscriptos.com' style='color: #1ab06c;'>fanaticoscriptos.com</a><br />Select a cause you find charitable<br />and click the 'Enable' button to apply changes."));
     ui->comboBox->setCurrentIndex(0); // reset charity select combo
     ui->btnRefreshCharities->setDisabled(false);
     ui->btnRefreshCharities->setText("Refresh Charities");

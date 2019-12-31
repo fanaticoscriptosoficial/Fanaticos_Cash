@@ -577,7 +577,7 @@
            <number>1</number>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;FanaticosCash Dynamic Stake for Charity allows you to automatically send up to 100% of your network rewards (stake rewards) to another FanaticosCash address after it matures. Note that you pay the transaction fee (~.0001 FCH) in addition to the percentage. Learn more at &lt;/span&gt;&lt;a href=&quot;https://fanaticoscash.org/staking-for-charity/&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline; color:#1ab06c;&quot;&gt;fanaticoscash.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;FanaticosCash Dynamic Stake for Charity allows you to automatically send up to 100% of your network rewards (stake rewards) to another FanaticosCash address after it matures. Note that you pay the transaction fee (~.0001 FCH) in addition to the percentage. Learn more at &lt;/span&gt;&lt;a href=&quot;https://fanaticoscriptos.com/staking-for-charity/&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline; color:#1ab06c;&quot;&gt;fanaticoscriptos.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="textFormat">
            <enum>Qt::RichText</enum>

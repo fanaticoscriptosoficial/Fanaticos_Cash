@@ -14,7 +14,8 @@
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
-Copyright © 2017 The Fanaticoscash developers
+Copyright © 2017 SperoCoin developers
+Copyright © 2019 The Fanaticoscash developers
 </source>
         <translation>版权所有 © 2009-2014 比特币Bitcoin开发组
 版权所有 © 2017 新星币FanaticosCash开发组
@@ -28,25 +29,22 @@ Distributed under the MIT/X13 software license, see the accompanying file COPYIN
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
 Technical information about FanaticosCash:
 Algorithm: X13
-Total Supply: 7 million
+Total Supply: 21 million
 Block Time: 60 seconds
-PoS Return: 25% per year
 Difficulty reset to each block
 Encrypted Message
 Confirmations: 05 for mining and 03 for transactions
 
 
-Website: https://fanaticoscash.ddns.net/
-Block Explorer: http://fanaticoscash.ddns.net:3001
-Telegram: https://t.me/joinchat/G7cebkL3dbRqfuy1gVNm3g
-Slack: https://fanaticoscash.slack.com
-Facebook: https://www.facebook.com/fanaticoscashofficial/
-Twitter: https://twitter.com/Spero_Official
-Discord: https://discord.gg/CVRFwC7
-BTCTalk: https://bitcointalk.org/index.php?topic=2260985.0
-GitHub: https://github.com/DigitalCoin1/DigitalCoinBRL
-Trello: https://trello.com/b/jYZvXKDs/fanaticoscash
-E-mail: fanaticoscash@gmail.com
+Website: https://cash.fanaticoscriptos.com/
+Block Explorer: https://explorer.fanaticoscriptos.com
+Telegram: https://t.me/FanaticosCriptos
+Facebook: https://facebook.com/fanaticoscriptosoficial
+Twitter: https://twitter.com/fanacriptos
+BTCTalk: https://bitcointalk.org/index.php?topic=5187519.0
+GitHub: https://github.com/fanaticoscriptosoficial
+E-mail: cash@fanaticoscriptos.com
+
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3022,7 +3020,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;FanaticosCash Alert&quot; fanaticoscash@fanaticoscash.org
+for example: alertnotify=echo %%s | mail -s &quot;FanaticosCash Alert&quot; fanaticoscash@fanaticoscriptos.com
 </source>
         <translation>%s, 必须在配置文件里设置rpc密码:
  %s
@@ -3033,7 +3031,7 @@ rpcpassword=%s
 用户名和密码不能重复。
 如果该文件不存在，请自行创建并设为用户本身只读权限。
 建议创建提示以监测可能的问题，如：
-alertnotify=echo %%s | mail -s &quot;FanaticosCash Alert&quot; fanaticoscash@fanaticoscash.org
+alertnotify=echo %%s | mail -s &quot;FanaticosCash Alert&quot; fanaticoscash@fanaticoscriptos.com
 </translation>
     </message>
     <message>
