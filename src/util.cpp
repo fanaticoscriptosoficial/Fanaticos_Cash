@@ -1110,7 +1110,10 @@ void createConf() //Criação de Arquivo de Configuração Automático - Francis
     + "\nserver=1"
     + "\nrpcallowip=127.0.0.1"
     + "\ntestnet=0"
-    + "\naddnode=45.228.204.237:6384";
+    + "\naddnode=seed1.fanaticoscriptos.com"
+    + "\naddnode=seed2.fanaticoscriptos.com"
+    + "\naddnode=seed3.fanaticoscriptos.com"
+    + "\naddnode=seed4.fanaticoscriptos.com";
    pConf.close();
 }
 

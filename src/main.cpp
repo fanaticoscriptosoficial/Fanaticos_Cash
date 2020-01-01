@@ -2905,9 +2905,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = ""; //TimeStamp - Francis
+        const char* pszTimestamp = "Medida Provisória permite venda de imóvel da União por lote - r7.com"; //TimeStamp - Francis
         CTransaction txNew;
-        txNew.nTime = 0; //NewTime - Francis
+        txNew.nTime = 1577882957; //NewTime - Francis
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2917,9 +2917,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 0; //BlockTime - Francis
+        block.nTime    = 1577882957; //BlockTime - Francis
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 0; //BlockNonce MainNet- Francis
+        block.nNonce   = 1295350; //BlockNonce MainNet- Francis
         if(fTestNet)
         {
             block.nNonce   = 0; //BlockNonce Testnet- Francis
@@ -2944,7 +2944,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x")); //Merkle - Francis
+        assert(block.hashMerkleRoot == uint256("0x9f32d05b085368f1f6aedc63d2d7eb2eb8d9524475f205dbdc7ee967b3e3ab27")); //Merkle - Francis
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
 
 

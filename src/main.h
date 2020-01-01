@@ -66,7 +66,7 @@ static const int fHaveUPnP = true;
 static const int fHaveUPnP = false;
 #endif
 
-static const uint256 hashGenesisBlock("0x"); //Bloco Gênesis MainNet- Francis
+static const uint256 hashGenesisBlock("0x000005ae9ddcd24131d212d42d91f4e359a4c202bac4b5bbdf3ac24ff90df529"); //Bloco Gênesis MainNet- Francis
 static const uint256 hashGenesisBlockTestNet("0x"); //Bloco Gênesis TestNet - Francis
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 2 * 60 * 60; } // up to 2 hours from the past

@@ -30,7 +30,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 Technical information about FanaticosCash:
 Algorithm: X13
 Total Supply: 21 million
-Block Time: 60 seconds
+Block Time: 180 seconds
 Difficulty reset to each block
 Encrypted Message
 Confirmations: 05 for mining and 03 for transactions
