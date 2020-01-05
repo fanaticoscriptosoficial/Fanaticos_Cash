@@ -1050,21 +1050,25 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     {
         int64_t nSubsidy = 0 * COIN;
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 1000 && pindexBest->nHeight < 350399) //1ª FASE
+    }else if(pindexBest->nHeight >= 1000 && pindexBest->nHeight < 9999) //1ª FASE
     {
         int64_t nSubsidy = 2 * COIN;
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 350400 && pindexBest->nHeight < 1226399) //2ª FASE
+    }else if(pindexBest->nHeight >= 10000 && pindexBest->nHeight < 350399) //2ª FASE
     {
-        int64_t nSubsidy = 1.5 * COIN;
+        int64_t nSubsidy = 0.8 * COIN;
         return nSubsidy + nFees;
-    }else if(pindexBest->nHeight >= 1226400 && pindexBest->nHeight < 1751999) //3ª FASE
+    }else if(pindexBest->nHeight >= 350400 && pindexBest->nHeight < 1226399) //3ª FASE
     {
-        int64_t nSubsidy = 1.25 * COIN;
+        int64_t nSubsidy = 0.5 * COIN;
+        return nSubsidy + nFees;
+    }else if(pindexBest->nHeight >= 1226400 && pindexBest->nHeight < 1751999) //4ª FASE
+    {
+        int64_t nSubsidy = 0.3 * COIN;
         return nSubsidy + nFees;
     }else if(pindexBest->nHeight >= 1752000) //FASE FINAL
     {
-        int64_t nSubsidy = 1 * COIN;
+        int64_t nSubsidy = 0.2 * COIN;
         return nSubsidy + nFees;
     }
     int64_t nSubsidy = 0 * COIN; //Premiação PoW Padrão(0 Moedas) - Francis
