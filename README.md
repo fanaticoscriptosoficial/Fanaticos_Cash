@@ -1,6 +1,6 @@
 # Fanáticos Cash
-# Version: 1.0.0.0
-Em desenvolvimento...
+# Version: 2.0.0.0
+Developed by Fanáticos Criptos / SperoCoin
 
 # Contact:
 > 💬Telegram:
@@ -29,10 +29,11 @@ Em desenvolvimento...
   - **BLOCK TIME:** 180 seconds
   - **REWARDS PoW:**<br>
   Phase Anti-instamine - Block 11 to 999 = 0FCH <br>
-  Phase 01 - Block 1000 to 350399 = 2FCH <br>
-  Phase 02 - Block 350400 to 1226399 = 1.5FCH <br>
-  Phase 03 - Block 1226400 to 1751999 = 1.25FCH <br>
-  Phase 04 - Block 1752000 up = 1FCH <br>
+  Phase 01 - Block 1000 to 9999 = 2FCH <br>
+  Phase 02 - Block 10000 to 350399 = 0.8FCH <br>
+  Phase 03 - Block 350400 to 1226399 = 0.5FCH <br>
+  Phase 04 - Block 1226400 to 1751999 = 0.3FCH <br>
+  Phase 05 - Block 1752000 up = 0.2FCH <br>
   - **PoS:** After 2h
   - **PoS:**<br>
   Phase 01 - Block 0 to 175199 = 18%* <br>
