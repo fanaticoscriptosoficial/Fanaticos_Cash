@@ -22,7 +22,7 @@ Developed by Fanáticos Criptos / SperoCoin
 **https://cash.fanaticoscriptos.com**
 
 > 🌎Block Explorer:
-**EM DESENVOLVIMENTO**
+**https://explorer.fanaticoscriptos.com**
 
 # Specifications:
   - **ALGORITHM:** x13
