@@ -30,24 +30,26 @@ Developed by Fanáticos Criptos / SperoCoin
   - **REWARDS PoW:**<br>
   Phase Anti-instamine - Block 11 to 999 = 0FCH <br>
   Phase 01 - Block 1000 to 9999 = 2FCH <br>
-  Phase 02 - Block 10000 to 350399 = 0.8FCH <br>
-  Phase 03 - Block 350400 to 1226399 = 0.5FCH <br>
-  Phase 04 - Block 1226400 to 1751999 = 0.3FCH <br>
-  Phase 05 - Block 1752000 up = 0.2FCH <br>
+  Phase 02 - Block 10000 to 99999 = 0.8FCH <br>
+  Phase 03 - Block 100000 to 350399 = 0.2FCH <br>
+  Phase 04 - Block 350400 to 1226399 = 0.18FCH <br>
+  Phase 05 - Block 1226400 to 1751999 = 0.15FCH <br>
+  Phase 06 - Block 1752000 up = 0.05FCH <br>
   - **PoS:** After 2h
   - **PoS:**<br>
-  Phase 01 - Block 0 to 175199 = 18%* <br>
-  Phase 02 - Block 175200 to 350399 = 15%* <br>
-  Phase 03 - Block 350400 to 525599 = 14%* <br>
-  Phase 04 - Block 525600 to 700799 = 12%* <br>
-  Phase 05 - Block 700800 to 875999 = 10%* <br>
-  Phase 06 - Block 876000 to 1051199 = 9%* <br>
-  Phase 07 - Block 1051200 to 1226399 = 8.5%* <br>
-  Phase 08 - Block 1226400 to 1401599 = 8%* <br>
-  Phase 09 - Block 1401600 to 1576799 = 7.5%* <br>
-  Phase 10 - Block 1576800 to 1751999 = 7%* <br>
-  Phase 11 - Block 1752000 to 1927199 = 6.5%* <br>
-  Phase 12 - Block 1927200 up = 6%* <br>
+  Phase 01 - Block 0 to 99999 = 18%* <br>
+  Phase 02 - Block 100000 to 175199 = 20%* <br>
+  Phase 03 - Block 175200 to 350399 = 19%* <br>
+  Phase 04 - Block 350400 to 525599 = 18%* <br>
+  Phase 05 - Block 525600 to 700799 = 15%* <br>
+  Phase 06 - Block 700800 to 875999 = 12%* <br>
+  Phase 07 - Block 876000 to 1051199 = 9%* <br>
+  Phase 08 - Block 1051200 to 1226399 = 8%* <br>
+  Phase 09 - Block 1226400 to 1401599 = 7%* <br>
+  Phase 10 - Block 1401600 to 1576799 = 6%* <br>
+  Phase 11 - Block 1576800 to 1751999 = 5%* <br>
+  Phase 12 - Block 1752000 to 1927199 = 4%* <br>
+  Phase 13 - Block 1927200 up = 3%* <br>
   *per year
   - **CONFIRMATIONS:** 5 for mining and 3 for transactions
   - **TOTAL COINS:** ~ 21 million
