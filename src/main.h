@@ -41,17 +41,18 @@ static const int64_t MIN_TX_FEE = 10000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 21000000 * COIN; //Moedas Totais(Total Supply) - Francis
 static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE01 = 0.18 * COIN; //Stake 18% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE02 = 0.15 * COIN; //Stake 15% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE03 = 0.14 * COIN; //Stake 14% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE04 = 0.12 * COIN; //Stake 12% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE05 = 0.10 * COIN; //Stake 10% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE06 = 0.09 * COIN; //Stake 9% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE07 = 0.085 * COIN; //Stake 8.5% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE02 = 0.20 * COIN; //Stake 20% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE03 = 0.19 * COIN; //Stake 19% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE04 = 0.18 * COIN; //Stake 18% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE05 = 0.15 * COIN; //Stake 15% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE06 = 0.12 * COIN; //Stake 12% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE07 = 0.09 * COIN; //Stake 9% por ano
 static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE08 = 0.08 * COIN; //Stake 8% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE09 = 0.075 * COIN; //Stake 7.5% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE10 = 0.07 * COIN; //Stake 7% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE11 = 0.065 * COIN; //Stake 6.5% por ano
-static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE12 = 0.06 * COIN; //Stake 6% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE09 = 0.07 * COIN; //Stake 7% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE10 = 0.06 * COIN; //Stake 6% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE11 = 0.05 * COIN; //Stake 5% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE12 = 0.04 * COIN; //Stake 4% por ano
+static const int64_t MAX_MINT_PROOF_OF_STAKE_FASE13 = 0.03 * COIN; //Stake 3% por ano
 
 #define FOUNDATION ""
 #define FOUNDATION_TEST ""

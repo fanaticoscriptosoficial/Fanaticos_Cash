@@ -6,7 +6,7 @@
 //
 
 // These need to be macros, as version.cpp's and bitcoin-qt.rc's voodoo requires it
-#define CLIENT_VERSION_MAJOR       2 //Versão Maior - Francis
+#define CLIENT_VERSION_MAJOR       3 //Versão Maior - Francis
 #define CLIENT_VERSION_MINOR       0 //Versão Menor - Francis
 #define CLIENT_VERSION_REVISION    0 //Versão de Revisão - Francis
 #define CLIENT_VERSION_BUILD       0 //Versão de Build - Francis
