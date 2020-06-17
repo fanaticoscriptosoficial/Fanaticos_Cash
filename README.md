@@ -88,10 +88,10 @@ daemon=1
 server=1
 rpcallowip=127.0.0.1
 testnet=0
-addnode=node1.fanaticoscriptos.com:6384
-addnode=node2.fanaticoscriptos.com:6384
-addnode=node3.fanaticoscriptos.com:6384
-addnode=node4.fanaticoscriptos.com:6384
+addnode=seed1.fanaticoscriptos.com:6384
+addnode=seed2.fanaticoscriptos.com:6384
+addnode=seed3.fanaticoscriptos.com:6384
+addnode=seed4.fanaticoscriptos.com:6384
 ```
 
 # FanaticosCash.conf - Testnet
@@ -108,10 +108,10 @@ daemon=1
 server=1
 rpcallowip=127.0.0.1
 testnet=1
-addnode=node1.fanaticoscriptos.com:6382
-addnode=node2.fanaticoscriptos.com:6382
-addnode=node3.fanaticoscriptos.com:6382
-addnode=node4.fanaticoscriptos.com:6382
+addnode=seed1.fanaticoscriptos.com:6382
+addnode=seed2.fanaticoscriptos.com:6382
+addnode=seed3.fanaticoscriptos.com:6382
+addnode=seed4.fanaticoscriptos.com:6382
 ```
 
 #  Mining:
