@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+// Copyright (c) 2017-2020 The SperoCoin Developers
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -494,8 +495,8 @@ bool EvalScript(vector<vector<unsigned char> >& stack, const CScript& script, co
                 // Control
                 //
                 case OP_NOP:
-		case OP_NOP1: case OP_NOP4: case OP_NOP5:
-		case OP_NOP6: case OP_NOP7: case OP_NOP8: case OP_NOP9: case OP_NOP10:
+        case OP_NOP1: case OP_NOP4: case OP_NOP5:
+        case OP_NOP6: case OP_NOP7: case OP_NOP8: case OP_NOP9: case OP_NOP10:
                 break;
 
                 case OP_IF:
@@ -1026,17 +1027,29 @@ bool EvalScript(vector<vector<unsigned char> >& stack, const CScript& script, co
                         break;
 
                     case OP_MUL:
+#if OPENSSL_VERSION_NUMBER < 0x10100000
                         if (!BN_mul(&bn, &bn1, &bn2, pctx))
+#else
+                        if (!BN_mul(bn.pbn, bn1.pbn, bn2.pbn, pctx))
+#endif
                             return false;
                         break;
 
                     case OP_DIV:
+#if OPENSSL_VERSION_NUMBER < 0x10100000
                         if (!BN_div(&bn, NULL, &bn1, &bn2, pctx))
+#else
+                        if (!BN_div(bn.pbn, NULL, bn1.pbn, bn2.pbn, pctx))
+#endif
                             return false;
                         break;
 
                     case OP_MOD:
+#if OPENSSL_VERSION_NUMBER < 0x10100000
                         if (!BN_mod(&bn, &bn1, &bn2, pctx))
+#else
+                        if (!BN_mod(bn.pbn, bn1.pbn, bn2.pbn, pctx))
+#endif
                             return false;
                         break;
 
@@ -1465,7 +1478,7 @@ bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, vector<vector<unsi
         mTemplates.insert(make_pair(TX_MULTISIG, CScript() << OP_SMALLINTEGER << OP_PUBKEYS << OP_SMALLINTEGER << OP_CHECKMULTISIG));
 
         // Empty, provably prunable, data-carrying output
-	if (GetBoolArg("-datacarrier", true))
+    if (GetBoolArg("-datacarrier", true))
             mTemplates.insert(make_pair(TX_NULL_DATA, CScript() << OP_RETURN << OP_SMALLDATA));
         mTemplates.insert(make_pair(TX_NULL_DATA, CScript() << OP_RETURN));
     }
@@ -1555,8 +1568,8 @@ bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, vector<vector<unsi
             else if (opcode2 == OP_SMALLDATA)
             {
                 // small pushdata, <= MAX_OP_RETURN_RELAY bytes
-		//if (vch1.size() > MAX_OP_RETURN_RELAY)
-		if (vch1.size() > nMaxDatacarrierBytes)
+        //if (vch1.size() > MAX_OP_RETURN_RELAY)
+        if (vch1.size() > nMaxDatacarrierBytes)
                     break;
             }
             else if (opcode1 != opcode2 || vch1 != vch2)
